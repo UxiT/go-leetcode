@@ -1,4 +1,4 @@
-package twosum
+package algos
 
 type ListNode struct {
 	Val  int

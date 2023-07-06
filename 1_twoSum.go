@@ -1,4 +1,4 @@
-package twosum
+package algos
 
 func twoSum(nums []int, target int) []int {
 	var indexes []int

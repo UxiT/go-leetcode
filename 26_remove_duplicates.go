@@ -1,24 +1,22 @@
 package algos
 
 func removeDuplicates(nums []int) int {
-	m := make(map[int]bool)
-	k, c := 0, 0
-	l := len(nums)
+	seen := make(map[int]bool)
+	cnt := 0
+	r := []int{}
 
-	for i := 0; i < l; i++ {
-		if !m[nums[i]] {
-			m[nums[i]] = true
-			c++
+	for _, v := range nums {
+		if seen[v] == true {
 			continue
-		} else {
-			k++
-			nums = append(nums[:i], nums[i+1:]...)
 		}
+
+		seen[v] = true
+		cnt += 1
+		r = append(r, v)
 	}
 
-	for i := 0; i < k; i++ {
-		nums[l-i] = '_'
+	for k, _ := range nums {
+		nums[k] = r[k]
 	}
-
-	return c
+	return cnt
 }

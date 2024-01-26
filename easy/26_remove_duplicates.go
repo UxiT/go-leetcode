@@ -18,5 +18,6 @@ func removeDuplicates(nums []int) int {
 	for k, _ := range nums {
 		nums[k] = r[k]
 	}
+
 	return cnt
 }

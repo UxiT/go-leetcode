@@ -1,5 +1,10 @@
 package algos
 
+type ListNode struct {
+	Val  int
+	Next *ListNode
+}
+
 func mergeTwoLists(list1 *ListNode, list2 *ListNode) *ListNode {
 	if list1 == nil {
 		return list2

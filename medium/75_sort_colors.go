@@ -1,28 +1,31 @@
-package medium
+package algos
 
 func sortColors(nums []int) {
-	firstElem := 0
-	numsLen := len(nums) - 1
+	countMap := make(map[int]int, 3)
+	offset := 0
 
-	for i := numsLen; i > firstElem; i-- {
-		for nums[firstElem] == 0 && firstElem < numsLen {
-			firstElem++
-		}
+	for _, v := range nums {
+		_, ok := countMap[v]
 
-		if nums[i] == 0 {
-			nums[i] = nums[firstElem]
-			nums[firstElem] = 0
+		if ok {
+			countMap[v] += 1
+		} else {
+			countMap[v] = 1
 		}
 	}
 
-	for i := numsLen; i > firstElem; i-- {
-		for (nums[firstElem] == 1 || nums[firstElem] == 0) && firstElem < numsLen {
-			firstElem++
-		}
+	for i := 0; i < countMap[0]; i++ {
+		nums[offset] = 0
+		offset++
+	}
 
-		if nums[i] == 1 {
-			nums[i] = nums[firstElem]
-			nums[firstElem] = 1
-		}
+	for i := 0; i < countMap[1]; i++ {
+		nums[offset] = 1
+		offset++
+	}
+
+	for i := 0; i < countMap[2]; i++ {
+		nums[offset] = 2
+		offset++
 	}
 }

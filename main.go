@@ -1,20 +1,17 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	algos "leetcode/easy"
+)
 
 func main() {
-	k := 2
-	n := 2
-	res := getFactorial(n) / (getFactorial(k) * getFactorial(n-k))
 
-	fmt.Printf("res: %d", res)
-}
+	node2 := algos.TreeNode{Val: 2, Left: nil, Right: nil}
+	root1 := algos.TreeNode{Val: 1, Left: &node2, Right: nil}
+	root2 := algos.TreeNode{Val: 1, Left: nil, Right: &node2}
 
-func getFactorial(n int) int {
-	res := 1
-	for i := 1; i <= n; i++ {
-		res *= i
-	}
+	res := algos.IsSameTree(&root1, &root2)
 
-	return res
+	fmt.Printf("res: %v", res)
 }

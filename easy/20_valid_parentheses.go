@@ -1,6 +1,6 @@
 package algos
 
-func isValid(s string) bool {
+func IsValid(s string) bool {
 	var stack []rune
 	mapping := map[rune]rune{
 		')': '(',

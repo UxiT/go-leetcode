@@ -1,6 +1,6 @@
 package algos
 
-func twoSum(nums []int, target int) []int {
+func TwoSum(nums []int, target int) []int {
 	var indexes []int
 
 	for i := 0; i < len(nums); i++ {

@@ -2,7 +2,7 @@ package algos
 
 import "strings"
 
-func generateParenthesis(n int) []string {
+func GenerateParenthesis(n int) []string {
 	var result []string
 	result = append(result, strings.Repeat("(", n)+strings.Repeat(")", n))
 

@@ -2,7 +2,7 @@ package algos
 
 import "strconv"
 
-func isPalindrome(x int) bool {
+func IsPalindrome(x int) bool {
 	if x < 10 {
 		return false
 	}

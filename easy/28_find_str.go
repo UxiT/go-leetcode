@@ -1,6 +1,6 @@
 package algos
 
-func strStr(haystack string, needle string) int {
+func StrStr(haystack string, needle string) int {
 	haystackLen := len(haystack)
 	needleLen := len(needle)
 

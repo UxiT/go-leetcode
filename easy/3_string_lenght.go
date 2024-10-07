@@ -1,6 +1,6 @@
 package algos
 
-func lengthOfLongestSubstring(s string) int {
+func LengthOfLongestSubstring(s string) int {
 	size, maxSize := 0, 0
 	chars := make(map[rune]bool)
 

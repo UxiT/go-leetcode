@@ -1,6 +1,6 @@
 package algos
 
-func longestCommonPrefix(strs []string) string {
+func LongestCommonPrefix(strs []string) string {
 	if len(strs) == 0 {
 		return ""
 	}

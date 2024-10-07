@@ -1,7 +1,7 @@
 package algos
 
 // Assume that largest number is always on the left
-func romanToInt(s string) int {
+func RomanToInt(s string) int {
 	sum := 0
 
 	symMap := map[byte]int{

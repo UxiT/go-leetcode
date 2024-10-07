@@ -1,6 +1,6 @@
 package algos
 
-func removeDuplicates(nums []int) int {
+func RemoveDuplicates(nums []int) int {
 	seen := make(map[int]bool)
 	cnt := 0
 	r := []int{}

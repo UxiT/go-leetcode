@@ -1,6 +1,6 @@
 package algos
 
-func climbStairs(n int) int {
+func ClimbStairs(n int) int {
 	if n <= 2 {
 		return n
 	}

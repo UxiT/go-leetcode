@@ -2,7 +2,7 @@ package algos
 
 import "strings"
 
-func maximumOddBinaryNumber(s string) string {
+func MaximumOddBinaryNumber(s string) string {
 	zeroes := 0
 	ones := 0
 

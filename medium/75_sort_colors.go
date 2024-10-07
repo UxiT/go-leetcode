@@ -1,4 +1,4 @@
-package algos
+package medium
 
 func sortColors(nums []int) {
 	countMap := make(map[int]int, 3)

@@ -1,4 +1,4 @@
-package algos
+package easy
 
 func LongestCommonPrefix(strs []string) string {
 	if len(strs) == 0 {

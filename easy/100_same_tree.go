@@ -1,4 +1,4 @@
-package algos
+package easy
 
 func IsSameTree(p *TreeNode, q *TreeNode) bool {
 	var goDeeper func(node1 *TreeNode, node2 *TreeNode)

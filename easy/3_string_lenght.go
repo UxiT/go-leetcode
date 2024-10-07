@@ -1,4 +1,4 @@
-package algos
+package easy
 
 func LengthOfLongestSubstring(s string) int {
 	size, maxSize := 0, 0

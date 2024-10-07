@@ -1,4 +1,4 @@
-package algos
+package medium
 
 type ListNode struct {
 	Val  int

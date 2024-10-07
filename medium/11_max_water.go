@@ -1,4 +1,4 @@
-package algos
+package medium
 
 func calcS(idx1, idx2, h1, h2 int) int {
 	if h1 < h2 {

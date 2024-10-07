@@ -1,4 +1,4 @@
-package algos
+package easy
 
 func StrStr(haystack string, needle string) int {
 	haystackLen := len(haystack)

@@ -1,4 +1,4 @@
-package algos
+package easy
 
 import "strings"
 

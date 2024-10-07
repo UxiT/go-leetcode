@@ -1,4 +1,4 @@
-package algos
+package easy
 
 // Assume that largest number is always on the left
 func RomanToInt(s string) int {

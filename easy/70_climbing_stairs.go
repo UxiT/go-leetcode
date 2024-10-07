@@ -1,4 +1,4 @@
-package algos
+package easy
 
 func ClimbStairs(n int) int {
 	if n <= 2 {

@@ -1,4 +1,4 @@
-package algos
+package easy
 
 func IsValid(s string) bool {
 	var stack []rune

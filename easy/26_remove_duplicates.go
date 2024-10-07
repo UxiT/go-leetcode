@@ -1,4 +1,4 @@
-package algos
+package easy
 
 func RemoveDuplicates(nums []int) int {
 	seen := make(map[int]bool)

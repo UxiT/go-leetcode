@@ -1,4 +1,4 @@
-package algos
+package easy
 
 type TreeNode struct {
 	Val   int

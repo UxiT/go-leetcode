@@ -2,14 +2,13 @@ package main
 
 import (
 	"fmt"
-	"leetcode/medium"
+	"leetcode/easy"
 )
 
 func main() {
-	v1 := "1.0"
-	v2 := "1.0.0.0"
+	nums := []int{4, 1, 2, 1, 2}
 
-	r := medium.CompareVersion(v1, v2)
+	r := easy.SingleNumber(nums)
 
 	fmt.Print(r)
 }

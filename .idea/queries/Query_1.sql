@@ -1,0 +1,1 @@
+SELECT * FROM notification_service.channels LIMIT ? OFFSET ?

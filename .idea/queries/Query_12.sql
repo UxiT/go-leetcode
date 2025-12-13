@@ -1,0 +1,13 @@
+INSERT INTO notification_service.categories (uuid, key, parent_uuid, created_at) VALUES ('e3f8b703-9042-4577-b19e-f93c7e959357', 'password_reset', null, '2025-10-10 12:21:33');
+INSERT INTO notification_service.categories (uuid, key, parent_uuid, created_at) VALUES ('dfcf1486-e627-46ca-96fe-f459ccbc785e', 'logged_in', null, '2025-10-10 12:21:33');
+INSERT INTO notification_service.categories (uuid, key, parent_uuid, created_at) VALUES ('a1bfaa5d-5e9b-4cce-a5c3-ac1e6d4d0c06', 'password_updated', null, '2025-10-10 12:21:33');
+INSERT INTO notification_service.categories (uuid, key, parent_uuid, created_at) VALUES ('bb5a286e-285e-4bd6-80fd-8653aac249e4', 'registered', null, '2025-10-10 12:21:33');
+INSERT INTO notification_service.categories (uuid, key, parent_uuid, created_at) VALUES ('311ce90d-14c6-4ff2-9346-b0937dc64167', 'kyc_submitted', null, '2025-10-10 12:21:33');
+INSERT INTO notification_service.categories (uuid, key, parent_uuid, created_at) VALUES ('1af63205-1fae-4189-bba9-c1f0a1dd7f39', 'kyc_approved', null, '2025-10-10 12:21:33');
+INSERT INTO notification_service.categories (uuid, key, parent_uuid, created_at) VALUES ('32e9a1af-7d04-4f49-8d6b-29da163d38ba', 'kyc_additional_information_required', null, '2025-10-10 12:21:33');
+INSERT INTO notification_service.categories (uuid, key, parent_uuid, created_at) VALUES ('cee3c441-427c-4d5c-a315-a84d537ef289', 'kyc_failed', null, '2025-10-10 12:21:33');
+INSERT INTO notification_service.categories (uuid, key, parent_uuid, created_at) VALUES ('38ea0292-8aaf-427a-af46-5d5fd1ae602d', 'update_password', null, '2025-10-10 12:21:33');
+INSERT INTO notification_service.categories (uuid, key, parent_uuid, created_at) VALUES ('aafdeab6-281e-481b-a233-923ef86a80b0', 'subscription_expired', null, '2025-11-24 14:47:36');
+INSERT INTO notification_service.categories (uuid, key, parent_uuid, created_at) VALUES ('fe203e3b-914b-48d0-b68d-ca9671ce04c1', 'subscription_is_expiring', null, '2025-11-24 14:47:36');
+INSERT INTO notification_service.categories (uuid, key, parent_uuid, created_at) VALUES ('dd03a148-99e9-462b-8629-7ed610b88d8a', 'external_withdraw_failed', null, '2025-11-24 14:47:36');
+INSERT INTO notification_service.categories (uuid, key, parent_uuid, created_at) VALUES ('af7bc6ae-6fc1-4d5a-8778-13752a0cb69c', 'external_withdraw_succeeded', null, '2025-11-24 14:47:36');

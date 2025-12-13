@@ -5,26 +5,30 @@ type ListNode struct {
 	Next *ListNode
 }
 
-func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
-	result := &ListNode{}
-	tmp := result
+func AddTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
+	dummy := &ListNode{}
+	node := dummy
 
 	for l1 != nil || l2 != nil {
 		if l1 != nil {
-			tmp.Val += l1.Val
+			node.Val += l1.Val
 			l1 = l1.Next
 		}
+
 		if l2 != nil {
-			tmp.Val += l2.Val
+			node.Val += l2.Val
 			l2 = l2.Next
 		}
-		if tmp.Val > 9 {
-			tmp.Val -= 10
-			tmp.Next = &ListNode{Val: 1}
+
+		if node.Val > 9 {
+			node.Val -= 10
+			node.Next = &ListNode{Val: 1}
 		} else if l1 != nil || l2 != nil {
-			tmp.Next = &ListNode{}
+			node.Next = &ListNode{}
 		}
-		tmp = tmp.Next
+
+		node = node.Next
 	}
-	return result
+
+	return dummy
 }

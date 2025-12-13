@@ -1,0 +1,2 @@
+delete from notification_service.customer_notifications where category_uuid = '01ca739d-a7c2-4c91-8e70-b482eb53c954';
+delete from notification_service.categories where uuid = '01ca739d-a7c2-4c91-8e70-b482eb53c954';
